@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Contatos</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guia de Contatos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Handlee&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <h1>Guia de Contatos</h1>
+                <h3 id="total">Total de contatos: 0</h3>
+            </header>
+            <form id="formulario">
+                <input type="text" placeholder="Digite o nome" id="inputNome" required>
+                <input type="text" placeholder="Digite o sobrenome" id="inputSobrenome" required>
+                <input type="number" inputmode="numeric" placeholder="Digite o número" id="inputNumero" required>
+                <input type="text" placeholder="Digite o apelido (opcional)" id="inputApelido">
+                <button type="submit">Adicionar +</button>
+                <button type="reset">Limpar</button>
+            </form>
+            <table cellspacing="0" id="tabela">
+                <thead>
+                    <tr>
+                        <th>
+                            <h2>Nome</h2>
+                        </th>
+                        <th>
+                            <h2>Sobrenome</h2>
+                        </th>
+                        <th>
+                            <h2>Telefone</h2>
+                        </th>
+                        <th>
+                            <h2>Apelido</h2>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                </tbody>
+            </table>
+            <footer id="footer">
+                <h4>&copy; Guia de Contatos - todos os direitos reservados - 2023</h4>
+                <button onclick="pressionaReset()">Limpar <span>TODOS</span> os contatos</button>
+            </footer>
+        </div>
+        <script src="main.js"></script>
+    </body>
+    
+    
+</html>
